@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home budget calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navigation">
+          <!--  <a href="year2021.html">Archiv</a> -->
+          <a href="index.html">Year 2022</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1>Home Budget Calculator for the year 2022</h1>
+      <form class="calculator-wrap">
+        <div class="month-year">
+          <div class="select">
+            <select name="month" class="selectList"></select>
+          </div>
+
+          <div class="select">
+            <select name="year" class="selectListA"></select>
+          </div>
+        </div>
+        <div class="inc-exp-wrap">
+          <div class="income">
+            <h2>Income</h2>
+            <div class="row-form">
+              <label for="salary">Salary:</label>
+              <span>€</span>
+              <input
+                type="number"
+                min="0"
+                step="0.1"
+                id="salary"
+                class="value-input"
+                required
+              />
+            </div>
+            <div class="row-form">
+              <label for="other-income">Other income:</label>
+              <span>€</span>
+              <input
+                type="number"
+                min="0"
+                step="0.1"
+                id="other-income"
+                class="value-input"
+                required
+              />
+            </div>
+            <div class="row-form">
+              <label for="total-income">Total income:</label>
+              <span>€</span>
+              <input type="number" id="total-income" readonly="readonly" />
+            </div>
+          </div>
+          <div class="expenses">
+            <h2>Expenses</h2>
+            <div class="row-form">
+              <label for="child-care">Child Care:</label>
+              <span>€</span>
+              <input
+                type="number"
+                min="0"
+                step="0.1"
+                id="child-care"
+                class="value-input-exp"
+                required
+              />
+            </div>
+            <div class="row-form">
+              <label for="housing">Housing:</label>
+              <span>€</span>
+              <input
+                type="number"
+                min="0"
+                step="0.1"
+                id="housing"
+                class="value-input-exp"
+                required
+              />
+            </div>
+            <div class="row-form">
+              <label for="food">Food:</label>
+              <span>€</span>
+              <input
+                type="number"
+                min="0"
+                step="0.1"
+                id="food"
+                class="value-input-exp"
+                required
+              />
+            </div>
+            <div class="row-form">
+              <label for="transportation">Transportation:</label>
+              <span>€</span>
+              <input
+                type="number"
+                min="0"
+                step="0.1"
+                id="transportation"
+                class="value-input-exp"
+                required
+              />
+            </div>
+            <div class="row-form">
+              <label for="electricity">Electricity:</label>
+              <span>€</span>
+              <input
+                type="number"
+                min="0"
+                step="0.10"
+                id="electricity"
+                class="value-input-exp"
+                required
+              />
+            </div>
+            <div class="row-form">
+              <label for="phone-internet">Phone / internet:</label>
+              <span>€</span>
+              <input
+                type="number"
+                min="0"
+                step="0.10"
+                id="phone-internet"
+                class="value-input-exp"
+                required
+              />
+            </div>
+
+            <div class="row-form">
+              <label for="total-expenses">Total expenses:</label>
+              <span>€</span>
+              <input type="number" id="total-expenses" readonly="readonly" />
+            </div>
+          </div>
+        </div>
+        <div class="confirm-wrap">
+          <button class="cancel-btn">Cancel</button>
+          <button class="confirm-btn">Add budget</button>
+        </div>
+        <div class="error-text">
+          <p></p>
+        </div>
+      </form>
+      <div class="printValue">
+        <h1>Monitoring your budget</h1>
+        <p>
+          Enter your monthly income and expense into this budget calculator to
+          create a suggested budget.
+        </p>
+        <div class="containerMonitoring"></div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <button class="remove-btn">Remove all budget table</button>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
