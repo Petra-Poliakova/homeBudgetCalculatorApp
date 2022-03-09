@@ -267,6 +267,12 @@ main {
   margin-bottom: 50px;
   animation: table-opacity 0.5s ease-in;
 }
+.prehead th {
+  text-align: center;
+  font-weight: normal;
+  font-size: 24px;
+  border-bottom: 1px solid var(--main-light-color);
+}
 @keyframes table-opacity {
   from {
     opacity: 0;
@@ -278,6 +284,7 @@ main {
 footer {
   width: 100%;
   height: auto;
+  min-height: 100px;
   background: var(--secondary-light-color);
 }
 .footer {
