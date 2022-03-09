@@ -22,7 +22,7 @@ const renderBudget = function (data) {
 
     incomeSumar.push(incomeSum);
     expensSumar.push(expensSum);
-    savingSumar.push(expensSum);
+    savingSumar.push(savingSum);
 
     const htmlBody = `
               <td>${data[i].montSelect}</td>
